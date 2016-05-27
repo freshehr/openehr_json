@@ -1,0 +1,278 @@
+
+    {
+		"composition": {
+        "@class": "COMPOSITION",
+        "name": {
+            "@class": "DV_TEXT",
+            "value": "Adverse reaction list"
+        },
+        "uid": {
+            "@class": "OBJECT_VERSION_ID",
+            "value": "760cc38c-aaee-4f86-8ac1-75c82a477a63::ripple_osi.ehrscape.c4h::1"
+        },
+        "archetype_details": {
+            "@class": "ARCHETYPED",
+            "archetype_id": {
+                "@class": "ARCHETYPE_ID",
+                "value": "openEHR-EHR-COMPOSITION.adverse_reaction_list.v1"
+            },
+            "template_id": {
+                "@class": "TEMPLATE_ID",
+                "value": "GPC - Allergies"
+            },
+            "rm_version": "1.0.1"
+        },
+        "archetype_node_id": "openEHR-EHR-COMPOSITION.adverse_reaction_list.v1",
+        "language": {
+            "@class": "CODE_PHRASE",
+            "terminology_id": {
+                "@class": "TERMINOLOGY_ID",
+                "value": "ISO_639-1"
+            },
+            "code_string": "en"
+        },
+        "territory": {
+            "@class": "CODE_PHRASE",
+            "terminology_id": {
+                "@class": "TERMINOLOGY_ID",
+                "value": "ISO_3166-1"
+            },
+            "code_string": "GB"
+        },
+        "category": {
+            "@class": "DV_CODED_TEXT",
+            "value": "event",
+            "defining_code": {
+                "@class": "CODE_PHRASE",
+                "terminology_id": {
+                    "@class": "TERMINOLOGY_ID",
+                    "value": "openehr"
+                },
+                "code_string": "433"
+            }
+        },
+        "composer": {
+            "@class": "PARTY_IDENTIFIED",
+            "name": "Dr Tony Shannon"
+        },
+        "context": {
+            "@class": "EVENT_CONTEXT",
+            "start_time": {
+                "@class": "DV_DATE_TIME",
+                "value": "2015-02-23T00:11:02.518+02:00"
+            },
+            "setting": {
+                "@class": "DV_CODED_TEXT",
+                "value": "other care",
+                "defining_code": {
+                    "@class": "CODE_PHRASE",
+                    "terminology_id": {
+                        "@class": "TERMINOLOGY_ID",
+                        "value": "openehr"
+                    },
+                    "code_string": "238"
+                }
+            },
+            "health_care_facility": {
+                "@class": "PARTY_IDENTIFIED",
+                "external_ref": {
+                    "@class": "PARTY_REF",
+                    "id": {
+                        "@class": "GENERIC_ID",
+                        "value": "999999-345",
+                        "scheme": "2.16.840.1.113883.2.1.4.3"
+                    },
+                    "namespace": "NHS-UK",
+                    "type": "PARTY"
+                },
+                "name": "Northumbria Community NHS"
+            }
+        },
+        "content": [
+            {
+                "@class": "EVALUATION",
+                "name": {
+                    "@class": "DV_TEXT",
+                    "value": "Adverse reaction risk"
+                },
+                "archetype_details": {
+                    "@class": "ARCHETYPED",
+                    "archetype_id": {
+                        "@class": "ARCHETYPE_ID",
+                        "value": "openEHR-EHR-EVALUATION.adverse_reaction_risk.v1"
+                    },
+                    "rm_version": "1.0.1"
+                },
+                "archetype_node_id": "openEHR-EHR-EVALUATION.adverse_reaction_risk.v1",
+                "language": {
+                    "@class": "CODE_PHRASE",
+                    "terminology_id": {
+                        "@class": "TERMINOLOGY_ID",
+                        "value": "ISO_639-1"
+                    },
+                    "code_string": "en"
+                },
+                "encoding": {
+                    "@class": "CODE_PHRASE",
+                    "terminology_id": {
+                        "@class": "TERMINOLOGY_ID",
+                        "value": "IANA_character-sets"
+                    },
+                    "code_string": "UTF-8"
+                },
+                "subject": {
+                    "@class": "PARTY_SELF"
+                },
+                "protocol": {
+                    "@class": "ITEM_TREE",
+                    "name": {
+                        "@class": "DV_TEXT",
+                        "value": "Tree"
+                    },
+                    "archetype_node_id": "at0042",
+                    "items": [
+                        {
+                            "@class": "ELEMENT",
+                            "name": {
+                                "@class": "DV_TEXT",
+                                "value": "RecordedDate"
+                            },
+                            "archetype_node_id": "at0062",
+                            "value": {
+                                "@class": "DV_DATE_TIME",
+                                "value": "2012-03-23T23:32:43.529Z"
+                            }
+                        }
+                    ]
+                },
+                "data": {
+                    "@class": "ITEM_TREE",
+                    "name": {
+                        "@class": "DV_TEXT",
+                        "value": "Tree"
+                    },
+                    "archetype_node_id": "at0001",
+                    "items": [
+                        {
+                            "@class": "ELEMENT",
+                            "name": {
+                                "@class": "DV_TEXT",
+                                "value": "CausativeAgent"
+                            },
+                            "archetype_node_id": "at0002",
+                            "value": {
+                                "@class": "DV_CODED_TEXT",
+                                "value": "allergy to penicillin",
+                                "defining_code": {
+                                    "@class": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "@class": "TERMINOLOGY_ID",
+                                        "value": "SNOMED-CT"
+                                    },
+                                    "code_string": "91936005"
+                                }
+                            }
+                        },
+                        {
+                            "@class": "ELEMENT",
+                            "name": {
+                                "@class": "DV_TEXT",
+                                "value": "Status"
+                            },
+                            "archetype_node_id": "at0063",
+                            "value": {
+                                "@class": "DV_CODED_TEXT",
+                                "value": "Refuted",
+                                "defining_code": {
+                                    "@class": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "@class": "TERMINOLOGY_ID",
+                                        "value": "local"
+                                    },
+                                    "code_string": "at0066"
+                                }
+                            }
+                        },
+                        {
+                            "@class": "ELEMENT",
+                            "name": {
+                                "@class": "DV_TEXT",
+                                "value": "AllergyType"
+                            },
+                            "archetype_node_id": "at0120",
+                            "value": {
+                                "@class": "DV_CODED_TEXT",
+                                "value": "Food",
+                                "defining_code": {
+                                    "@class": "CODE_PHRASE",
+                                    "terminology_id": {
+                                        "@class": "TERMINOLOGY_ID",
+                                        "value": "local"
+                                    },
+                                    "code_string": "at0121"
+                                }
+                            }
+                        },
+                        {
+                            "@class": "ELEMENT",
+                            "name": {
+                                "@class": "DV_TEXT",
+                                "value": "LastOccurence"
+                            },
+                            "archetype_node_id": "at0117",
+                            "value": {
+                                "@class": "DV_DATE_TIME",
+                                "value": "2016-03-23T23:32:43.529Z"
+                            }
+                        },
+                        {
+                            "@class": "ELEMENT",
+                            "name": {
+                                "@class": "DV_TEXT",
+                                "value": "Comment"
+                            },
+                            "archetype_node_id": "at0006",
+                            "value": {
+                                "@class": "DV_TEXT",
+                                "value": "Comment 93"
+                            }
+                        },
+                        {
+                            "@class": "CLUSTER",
+                            "name": {
+                                "@class": "DV_TEXT",
+                                "value": "Reaction event"
+                            },
+                            "archetype_node_id": "at0009",
+                            "items": [
+                                {
+                                    "@class": "ELEMENT",
+                                    "name": {
+                                        "@class": "DV_TEXT",
+                                        "value": "Manifestation"
+                                    },
+                                    "archetype_node_id": "at0011",
+                                    "value": {
+                                        "@class": "DV_TEXT",
+                                        "value": "Erythematous rash"
+                                    }
+                                },
+                                {
+                                    "@class": "ELEMENT",
+                                    "name": {
+                                        "@class": "DV_TEXT",
+                                        "value": "OnsetDate"
+                                    },
+                                    "archetype_node_id": "at0027",
+                                    "value": {
+                                        "@class": "DV_DATE_TIME",
+                                        "value": "2015-03-23T23:32:43.529Z"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }

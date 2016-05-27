@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<composition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="COMPOSITION" xmlns="http://schemas.openehr.org/v1" archetype_node_id="openEHR-EHR-COMPOSITION.adverse_reaction_list.v1">
+    <name>
+        <value>Adverse reaction list</value>
+    </name>
+    <uid xsi:type="OBJECT_VERSION_ID">
+        <value>760cc38c-aaee-4f86-8ac1-75c82a477a63::ripple_osi.ehrscape.c4h::1</value>
+    </uid>
+    <archetype_details>
+        <archetype_id>
+            <value>openEHR-EHR-COMPOSITION.adverse_reaction_list.v1</value>
+        </archetype_id>
+        <template_id>
+            <value>GPC - Allergies</value>
+        </template_id>
+        <rm_version>1.0.1</rm_version>
+    </archetype_details>
+    <language>
+        <terminology_id>
+            <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>en</code_string>
+    </language>
+    <territory>
+        <terminology_id>
+            <value>ISO_3166-1</value>
+        </terminology_id>
+        <code_string>GB</code_string>
+    </territory>
+    <category>
+        <value>event</value>
+        <defining_code>
+            <terminology_id>
+                <value>openehr</value>
+            </terminology_id>
+            <code_string>433</code_string>
+        </defining_code>
+    </category>
+    <composer xsi:type="PARTY_IDENTIFIED">
+        <name>Dr Tony Shannon</name>
+    </composer>
+    <context>
+        <start_time>
+            <value>2015-02-23T00:11:02.518+02:00</value>
+        </start_time>
+        <setting>
+            <value>other care</value>
+            <defining_code>
+                <terminology_id>
+                    <value>openehr</value>
+                </terminology_id>
+                <code_string>238</code_string>
+            </defining_code>
+        </setting>
+        <health_care_facility>
+            <external_ref>
+                <id xsi:type="GENERIC_ID">
+                    <value>999999-345</value>
+                    <scheme>2.16.840.1.113883.2.1.4.3</scheme>
+                </id>
+                <namespace>NHS-UK</namespace>
+                <type>PARTY</type>
+            </external_ref>
+            <name>Northumbria Community NHS</name>
+        </health_care_facility>
+    </context>
+    <content xsi:type="EVALUATION" archetype_node_id="openEHR-EHR-EVALUATION.adverse_reaction_risk.v1">
+        <name>
+            <value>Adverse reaction risk</value>
+        </name>
+        <archetype_details>
+            <archetype_id>
+                <value>openEHR-EHR-EVALUATION.adverse_reaction_risk.v1</value>
+            </archetype_id>
+            <rm_version>1.0.1</rm_version>
+        </archetype_details>
+        <language>
+            <terminology_id>
+                <value>ISO_639-1</value>
+            </terminology_id>
+            <code_string>en</code_string>
+        </language>
+        <encoding>
+            <terminology_id>
+                <value>IANA_character-sets</value>
+            </terminology_id>
+            <code_string>UTF-8</code_string>
+        </encoding>
+        <subject xsi:type="PARTY_SELF"/>
+        <protocol xsi:type="ITEM_TREE" archetype_node_id="at0042">
+            <name>
+                <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0062">
+                <name>
+                    <value>RecordedDate</value>
+                </name>
+                <value xsi:type="DV_DATE_TIME">
+                    <value>2012-03-23T23:32:43.529Z</value>
+                </value>
+            </items>
+        </protocol>
+        <data xsi:type="ITEM_TREE" archetype_node_id="at0001">
+            <name>
+                <value>Tree</value>
+            </name>
+            <items xsi:type="ELEMENT" archetype_node_id="at0002">
+                <name>
+                    <value>CausativeAgent</value>
+                </name>
+                <value xsi:type="DV_CODED_TEXT">
+                    <value>allergy to penicillin</value>
+                    <defining_code>
+                        <terminology_id>
+                            <value>SNOMED-CT</value>
+                        </terminology_id>
+                        <code_string>91936005</code_string>
+                    </defining_code>
+                </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0063">
+                <name>
+                    <value>Status</value>
+                </name>
+                <value xsi:type="DV_CODED_TEXT">
+                    <value>Refuted</value>
+                    <defining_code>
+                        <terminology_id>
+                            <value>local</value>
+                        </terminology_id>
+                        <code_string>at0066</code_string>
+                    </defining_code>
+                </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0120">
+                <name>
+                    <value>AllergyType</value>
+                </name>
+                <value xsi:type="DV_CODED_TEXT">
+                    <value>Food</value>
+                    <defining_code>
+                        <terminology_id>
+                            <value>local</value>
+                        </terminology_id>
+                        <code_string>at0121</code_string>
+                    </defining_code>
+                </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0117">
+                <name>
+                    <value>LastOccurence</value>
+                </name>
+                <value xsi:type="DV_DATE_TIME">
+                    <value>2016-03-23T23:32:43.529Z</value>
+                </value>
+            </items>
+            <items xsi:type="ELEMENT" archetype_node_id="at0006">
+                <name>
+                    <value>Comment</value>
+                </name>
+                <value xsi:type="DV_TEXT">
+                    <value>Comment 93</value>
+                </value>
+            </items>
+            <items xsi:type="CLUSTER" archetype_node_id="at0009">
+                <name>
+                    <value>Reaction event</value>
+                </name>
+                <items xsi:type="ELEMENT" archetype_node_id="at0011">
+                    <name>
+                        <value>Manifestation</value>
+                    </name>
+                    <value xsi:type="DV_TEXT">
+                        <value>Erythematous rash</value>
+                    </value>
+                </items>
+                <items xsi:type="ELEMENT" archetype_node_id="at0027">
+                    <name>
+                        <value>OnsetDate</value>
+                    </name>
+                    <value xsi:type="DV_DATE_TIME">
+                        <value>2015-03-23T23:32:43.529Z</value>
+                    </value>
+                </items>
+            </items>
+        </data>
+    </content>
+</composition>
